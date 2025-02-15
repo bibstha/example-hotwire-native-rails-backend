@@ -6,6 +6,6 @@ class Post < ApplicationRecord
   private
 
   def send_notifications
-    NewPostNotification.with(post: self).deliver_later(User.all)
+    # NewPostNotification.with(post: self).deliver_later(User.all)
   end
 end
